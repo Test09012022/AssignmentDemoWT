@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>ticker_id </th>
+            <th>timestamp</th>
+            <th>open</th>
+            <th>high </th>
+            <th>low</th>
+            <th>close</th>
+        </tr>
+        <br />
+        {% for detail in historical %}
+        <tr>
+            <td>{{detail.ticker_id}}</td>
+            <td>{{detail.timestamp}}</td>
+            <td>{{detail.open}}</td>
+            <td>{{detail.high}}</td>
+            <td>{{detail.low}}</td>
+            <td>{{detail.close}}</td>
+        </tr>
+      
+        {% endfor %}
+
+       
+    </table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Delete</title>
+</head>
+<body>
+    <h1>Details of ticker to be deleted</h1>
+    <br />
+    <br />
+
+    <form method="post">
+        {% csrf_token %}
+        <label>Name: </label> <label>{{product.name}}</label>
+        <br />
+        <br />
+        <label>Ticker: </label> <label>{{product.ticker}}</label>
+        <br />
+        <br />
+        <input type="submit" value="Delete" name="Confirm" />
+    </form>
+</body>
+</html>

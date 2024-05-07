@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+
+    <a href="{% url 'product_add'%}">   Add Ticker </a>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <table>
+        <tr>
+            <th>Name </th>
+            <th>Ticker</th>
+
+        </tr>
+        <br />
+
+        {% for product in products %}
+        <tr>
+            <td> <a href="{% url 'product_detail' product.id %}">   {{product.name}} </a></td>
+            <td>{{product.ticker}}</td>
+
+        </tr>
+
+        {% endfor %}
+
+</body>
+
+
+</html>

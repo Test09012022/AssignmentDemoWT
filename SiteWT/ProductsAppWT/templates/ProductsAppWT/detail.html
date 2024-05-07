@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <br />
+    <h1>Ticker Details</h1>
+    <br />
+    <br />
+
+    <br />
+    <label>Name: </label> <label>{{product.name}}</label>
+    <br />
+    <label>Ticker: </label> <label>{{product.ticker}}</label>
+    <br />
+    <label>Id: </label> <label>{{product.id}}</label>
+    <br />
+
+    <br />
+    <br />
+
+    <a href="{% url 'product_delete' product.id %}">   Delete Ticker </a>
+</body>
+</html>
